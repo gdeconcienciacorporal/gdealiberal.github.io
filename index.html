@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> GDE - Trail Running</title>  
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="gde1.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+ <div class="container">
+        <div class="main-container">
+            <h1>PROGRAMA DE ENTRENAMIENTO GDE -Trail Running</h1>
+            <h2>Alumno: Ayelén Liberal</h2>
+        </div>
+            <h2>Objetivo mensual: Mejorar la cadencia del paso.</h2>
+            <h2>Fase: Adquisición.</h2>
+            <h2 id ="pageTitle"> Próxima carrera Valholl: 2024/05/10 </h2> 
+            <p id="result"></p>
+            <p>Indicaciones previas:  </p>           
+    
+            <div class="sub-container">
+                <h4>SEMANA 1</h4>
+                <p>Objetivo semanal: Buscar manter fluidez en los pasos.</p> 
+                <div>
+                    <h2>Entrada en calor </h2>   <p> 4 vueltas x 14 repeticiones </p>
+                <div class="image-container">  
+                <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+                    <source src="Video1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="image-container">  
+                <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+                    <source src="Video2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        
+            </div>
+    
+            <div><h2> Running </h2>
+            </div>    
+            <div class="column-container 1">           
+                <div class="column">
+                    <h3>Dia 1</h3>
+                    <p>Lunes: 11 km Trail Parque de Montaña. </p>
+                    <p>  -1 km de menor a mayor, por senderos bajos. </p>
+                    <p>  -3 km Llorón subiendo fuerte adelante, bajada por calle. </p>
+                    <p>  -4 km Llorones por scooby, filo sur, bajada rapida por calle . </p>
+                    <p>  -3 km fuertes por senderos bajos. </p>
+                </div>
+                <div class="column">
+                    <h3>Dia 2</h3> 
+                    <p> Martes mañana: 5 km calle al mejor ritmo posible.</p>
+                    <p> Martes tarde: 14 km Zona de Arco.</p>
+                    <p>  -2 km de menor a mayor. </p>
+                    <p>  -5 km subiendo 40" bajando 15". </p>
+                    <p>  -4 km ágiles intentando no caminar. </p>
+                    <p>  -2 km suaaves. </p>
+                </div>
+                <div class="column">      
+                    <h3>Dia 3</h3>
+                    <p> Miércoles mañana: 8 km Series Triangulares Parque de Montaña. </p>
+                    <p>  -2 km fuertes. </p>
+                    <p>  -6x200m subida fuerte x Llorón parte de adelante, arriba descansamos 1':30". </p>
+                    <p>  -6x200m bajada fuerte x Llorón parte de adelante, abajo descansamos 2'. </p>
+                    <p>  -6x200m pasada llano, descansamos 30" entre pasada. </p>
+                    <p>  -2 km de menos a más, por cerros bajos. </p>
+                </div>                
+            </div>                
+            <div class="column-container 1">           
+                <div class="column">
+                    <h3>Dia 4</h3>
+                    <p> Jueves: 18 km Zona de Arco. </p>
+                    <p>  -2 km salida fuerte. </p>
+                    <p>  -5 km subiendo 40" bajando 15". </p>
+                    <p>  -2 km ágiles en subida. </p>
+                    <p>  -9 km buenas sensaciones. </p>
+                </div>
+                <div class="column">
+                    <h3>Dia 5</h3>        
+                    <p> Viernes: 16 km Gateado por Camino del Mal Paso. </p>
+                    <p>  -2 km fuerte. </p>
+                    <p>  -2 km de mayor a menor. </p>
+                    <p>  -4 km trekking exigido. </p>
+                    <p>  -8 km bajada suelta, con frenos cada 600 metros. </p>
+                </div>
+                <div class="column">
+                    <h3>Dia 6</h3>        
+                    <p> Sábado: 19 km Cerro Manos. </p>
+                    <p>  -2 km suave. </p>
+                    <p>  -4 km, 3' trekking exigido x 2' trote. </p>
+                    <p>  -5 km, 45" fuertes en subida x 30" pausa pasiva. </p>
+                    <p>  -6 km, 4' subiendo 1' bajando. </p>
+                    <p>  -2 km buenas sensaciones. </p>
+                </div>
+            </div>
+
+            <div class="small-paragraph-container">
+                <p> Método de recuperación </p>
+                <p> - duchas frías de 1':30" post entrenos (después del jueves y  viernes). </p>     
+            </div>
+                        
+            <div id="column-container 1">
+            <canvas id="myChart-line-1"></canvas>
+            </div>
+            
+        <div class="sub-container">
+            <h4>SEMANA 2: </h4>
+            <p>Objetivo semanal: Buscar bajar lo más fuerte posible. </p>
+            <div>
+                    <h2>Entrada en calor </h2>   <p> 4 vueltas x 14 repeticiones </p>
+                <div class="image-container">  
+                <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
+                    <source src="Video3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="image-container">  
+                <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
+                    <source src="Video4.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div><h2> Running </h2>
+        </div>
+        <div class="column-container 2">           
+            <div class="column">
+                <h3>Dia 1</h3>
+                <p>Lunes: 7 km Pasada en Calle.</p>
+                <p>  -2 km de menor a mayor. </p>
+                <p>  -6x300m, 300 mts fuertes x 300 metros suave. </p>
+                <p>  -6x300m, 200mts fuertisimo x 200 mts suave. </p>
+                <p>  -2x1000m, 1000 fuerte pausa pasiva 1' 1000 fuertísimo . </p>
+            </div>
+            <div class="column">
+                <h3>Dia 2</h3>        
+                <p> Martes mañana: 15 km Parque de Montaña.  </p>
+                <p>  -3 km Llorones subida por grieta, bajada por adelante. </p>
+                <p>  -3 km Llorones subida por calle, bajada por filo sur. </p>
+                <p>  -3 km Gloria, subida por pinos, bajada x calle. </p>
+                <p>  -4 km 7 colinas, subida fuerte, con frenos cada 20 mts. </p>
+                <p>  -2 km de mayor a menor. </p>
+            </div>
+            <div class="column">
+                <h3>Dia 3</h3>        
+                <p> Jueves mañana: 17 km Zona de Frías. </p>
+                <p>  -2 km fuertes. </p>
+                <p>  -3 km subidas fuertes, bajadas controladas. </p>
+                <p>  -5 km 20" fuertes x 20" ágiles. </p>
+                <p>  -7 km ritmo sostenido. </p>
+            </div>        
+        </div>        
+        <div class="column-container 2">           
+            <div class="column">
+                <h3>Dia 4</h3>
+                <p> Viernes mañana: 6 km calle, 2 ágiles x 2 fuertísimooos x 2 suaves. </p>
+                <p> Viernes tarde: 12 km Parque de Montaña - Frias.  </p>
+                <p>  -2 km de menor a mayor. </p>
+                <p>  -4 km meter subidas fuertes y bajadas suave, por Siete Colinas. </p>
+                <p>  -4 km haciendo 30" ágiles x 30"suaves. </p>
+                <p>  -2 km al mejor ritmo posible. </p>
+            </div> 
+            <div class="column">
+                <h3>Dia 5</h3>        
+                <p> Sábado: 25 km Zona del Arco 1900+. </p>
+                <p>  -2 km suave. </p>
+                <p>  -3 km 40" subiendo x 20"  bajada. </p>
+                <p>  -4 km el mejor ritmo sostenido en subida. </p>
+                <p>  -4 km trekking fuerte. </p>
+                <p>  -12 km, 6km fuerte x 6km a buenas sensaciones. </p>>
+            </div>
+            <div class="column">
+                <h3>Dia 6</h3>        
+                <p> Lunes: 11 km calle. </p>
+                <p>  -3 km de menor a mayor. </p>
+                <p>  -5 km 45" agiles x 45" suave. </p>
+                <p>  -4 km al mejor ritmo posible. </p>
+            </div>
+        </div>
+        <div class="small-paragraph-container">
+            <p> Método de recuperación </p>
+            <p>  - SEMANA 2 SIN MÉTODO DE RECUPERACIÓN.   </div>
+              
+        <div id="column-container 2">
+        <canvas id="myChart-line-2"></canvas>
+        </div>      
+
+        <div class="image-container">
+            <img class="imagen-chica" src="logo gde blanco horizontal.png" alt="Logo Gde horizontal">
+          </div>      
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

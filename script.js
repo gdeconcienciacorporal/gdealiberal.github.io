@@ -8,7 +8,7 @@ const dataLine1 = {
     label: 'Km recorridos en Semana 1',
     data: [9, 16, 6, 18, 12, 19], // Datos de los km recorridos en cada día
     borderColor: 'rgba(75, 192, 192, 1)',
-    fill: false,
+    fill: true,
     tension: 0.1
   }]
 };
@@ -19,7 +19,7 @@ const dataLine2 = {
     label: 'Km recorridos en Semana 2',
     data: [7, 21, 14, 12, 23, 11], // Datos de los km recorridos en cada día
     borderColor: 'rgba(153, 102, 255, 1)',
-    fill: false,
+    fill: true,
     tension: 0.1
   }]
 };

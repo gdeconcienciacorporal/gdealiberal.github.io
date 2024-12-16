@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-  actualizarDiasRestantes();
-  setInterval(actualizarDiasRestantes, 24*60*60*1000); // Actualizar diario
+  //actualizarDiasRestantes();
+  //setInterval(actualizarDiasRestantes, 24*60*60*1000); // Actualizar diario
   // Datos para el gráfico de líneas
 const dataLine1 = {
   labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4', 'Día 5'], // Etiquetas de los días
   datasets: [{
-    label: 'Km recorridos en Semana 29',
-    data: [8, 11, 11, 9, 17], // Datos de los km recorridos en cada día
+    label: 'Km recorridos en Semana 30',
+    data: [10, 13, 15, 10, 25], // Datos de los km recorridos en cada día
     borderColor: 'rgba(75, 192, 192, 1)',
     fill: true,
     tension: 0.1
@@ -16,14 +16,23 @@ const dataLine1 = {
 const dataLine2 = {
   labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4','Dia 5'], // Etiquetas de los días
   datasets: [{
-    label: 'Km recorridos en Semana 30',
-    data: [10, 13, 15, 10, 25], // Datos de los km recorridos en cada día
+    label: 'Km recorridos en Semana 31',
+    data: [15, 24, 19, 10, 22], // Datos de los km recorridos en cada día
     borderColor: 'rgba(153, 102, 255, 1)',
     fill: true,
     tension: 0.1
   }]
 };
-
+const dataLine3 = {
+  labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4', 'Día 5'], // Etiquetas de los días
+  datasets: [{
+    label: 'Km recorridos en Semana 32',
+    data: [14, 16, 18, 12, 25], // Datos de los km recorridos en cada día
+    borderColor: 'rgba(75, 192, 192, 1)',
+    fill: true,
+    tension: 0.1
+  }]
+};
 // Configuración del gráfico de líneas
 const configLine = {
   type: 'line',
@@ -42,6 +51,18 @@ const myChartLine1 = new Chart(document.getElementById('myChart-line-1'), config
 const myChartLine2 = new Chart(document.getElementById('myChart-line-2'), {
   type: 'line',
   data: dataLine2,
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+
+const myChartLine3 = new Chart(document.getElementById('myChart-line-3'), {
+  type: 'line',
+  data: dataLine3,
   options: {
     scales: {
       y: {
